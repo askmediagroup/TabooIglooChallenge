@@ -4,7 +4,6 @@ cymem==1.31.2
 cytoolz==0.8.2
 decorator==4.3.0
 dill==0.2.7.1
-en-core-web-lg==2.0.0
 entrypoints==0.2.3
 html5lib==1.0.1
 imbalanced-learn==0.3.3
@@ -21,6 +20,7 @@ jupyter-client==5.2.3
 jupyter-console==5.2.0
 jupyter-core==4.4.0
 MarkupSafe==1.0
+matplotlib==2.1.2
 mistune==0.8.3
 msgpack-numpy==0.4.1
 msgpack-python==0.5.6
@@ -35,7 +35,6 @@ parso==0.2.1
 pathlib==1.0.1
 pexpect==4.5.0
 pickleshare==0.7.4
-pkg-resources==0.0.0
 plac==0.9.6
 preshed==1.0.0
 prompt-toolkit==1.0.15
