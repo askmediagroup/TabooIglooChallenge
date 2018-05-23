@@ -5,7 +5,6 @@ cymem==1.31.2
 cytoolz==0.8.2
 decorator==4.3.0
 dill==0.2.7.1
-en-core-web-lg==2.0.0
 entrypoints==0.2.3
 html5lib==1.0.1
 imbalanced-learn==0.3.3
@@ -37,7 +36,6 @@ parso==0.2.0
 pathlib==1.0.1
 pexpect==4.5.0
 pickleshare==0.7.4
-pkg-resources==0.0.0
 plac==0.9.6
 preshed==1.0.0
 prompt-toolkit==1.0.15
