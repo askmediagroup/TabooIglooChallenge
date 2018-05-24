@@ -65,10 +65,8 @@ Halcón ML-57
 .45 ACP 
 Halcón ML-63 
 H&K UMP [2] 
-.45 ACP(UMP45),
 .40 S&W(UMP40)
 Heckler & Koch MP5 
-10mm Auto,
 .40 S&W
 Heckler & Koch MP7 
 MP
@@ -79,10 +77,6 @@ KP m/44 submachine gun
 KGP-9 
 KIS (weapon) 
 KRISS Vector 
-.45 ACP,
-.40 S&W,
-9×21mm,
-10mm Auto,
 .357 SIG
 Labora Fontbernat M-1938 
 Lanchester submachine gun 
@@ -191,11 +185,6 @@ TZ-45
 United Defense M42 
 .45 ACP 
 Uzi 
-Israel Weapon Industries,
-FN Herstal, Norinco,
-Lyttleton Engineering Works,
-(under Vektor Arms),
-RH-ALAN,
 Group Industries
 Vigneron submachine gun 
 Villar-Perosa aircraft submachine gun 
