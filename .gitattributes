@@ -1,1 +1,0 @@
-word2vec-lg-array.npy filter=lfs diff=lfs merge=lfs -text
