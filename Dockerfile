@@ -1,24 +1,26 @@
-# Copyright (c) Jupyter Development Team.
-# Distributed under the terms of the Modified BSD License.
-FROM jupyter/minimal-notebook
+FROM jupyter/base-notebook
 
-LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
+LABEL maintainer="Andrew Stryker <andrew.stryker@ask.com>"
 
+# install base packages
 USER root
 
-# libav-tools for matplotlib anim
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends libav-tools && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+RUN apt-get update \
+ && apt-get install -y build-essential
 
+# set-up workspace
 USER $NB_UID
 
-# Install Python 3 packages
-# Remove pyqt and qt pulled in for matplotlib since we're only ever going to
-# use notebook-friendly backends in these images
-RUN conda install --quiet --yes \
-    'spacy=2.*'
+COPY requirements.txt $HOME
+COPY taboo-igloo-challenge.ipynb $HOME
+COPY weapons-sample.jsonl $HOME
+COPY test-words.txt $HOME
+COPY images/no-guns.png $HOME/images/no-guns.png
 
-# Place documentation into the file?
-# ... not sure how this works ...
+RUN conda install pip
+RUN pip install --upgrade pip
+RUN pip install -r $HOME/requirements.txt
+RUN python -m spacy download en_core_web_lg
+
+# back to notebook user at exit
+USER $NB_UID
